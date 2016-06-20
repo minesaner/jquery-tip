@@ -1,4 +1,5 @@
 #jQuery 的 tip 提示插件
+
 ##$(selector).tip(options)
 配置对象
 >`fadeDelay`: 动画时长，默认 200（ms）  

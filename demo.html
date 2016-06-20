@@ -8,12 +8,14 @@
 	<script src="tip.js"></script>
 	<style>
 		.div{
-			margin: 100px;
+			margin-top:100px;
+			text-align:center;
 		}
 		span{
 			border: 1px solid #ccc;
 			border-radius: 4px;
 			padding: 3px 6px;
+			margin:100px;
 		}
 	</style>
 </head>
@@ -25,14 +27,13 @@
 		<span tip="bottom">bottom</span>
 	</div>
 	<script>
-		// $('span').each(function () {
-		// 	var position = $(this).text();
+		$('span').each(function () {
+			var position = $(this).text();
 
-		// 	$(this).tip({
-		// 		position: position
-		// 	})
-		// });
-		$('span').tip()
+			$(this).tip({
+				position: position
+			})
+		});
 	</script>
 </body>
 </html>
