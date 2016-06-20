@@ -1,0 +1,50 @@
+.tip {
+	position: absolute;
+	z-index: 1;
+	display: none;
+	max-width: 200px;
+	padding: 5px;
+	color: #1c1c1c;
+	text-align: left;
+	background: #f0e7d5;
+	border-radius: 5px
+}
+.tip .arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid
+}
+.top-tip .arrow,
+.bottom-tip .arrow {
+	left: 50%;
+	margin-left: -6px;
+	border-width: 10px 6px
+}
+.left-tip .arrow,
+.right-tip .arrow {
+	top: 50%;
+	margin-top: -6px;
+	border-width: 6px 10px
+}
+.top-tip .arrow {
+	top: 100%;
+	border-top-color: #f0e7d5;
+	border-bottom-width: 0
+}
+.right-tip .arrow {
+	right: 100%;
+	border-right-color: #f0e7d5;
+	border-left-width: 0
+}
+.bottom-tip .arrow {
+	bottom: 100%;
+	border-bottom-color: #f0e7d5;
+	border-top-width: 0
+}
+.left-tip .arrow {
+	left: 100%;
+	border-left-color: #f0e7d5;
+	border-right-width: 0
+}

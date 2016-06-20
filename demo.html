@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<link rel="stylesheet" href="tip.css">
+	<script src="jquery-2.1.1.js"></script>
+	<script src="tip.js"></script>
+	<style>
+		.div{
+			margin: 100px;
+		}
+		span{
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			padding: 3px 6px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div">
+		<span tip="left">left</span>
+		<span tip="top">top</span>
+		<span tip="right">right</span>
+		<span tip="bottom">bottom</span>
+	</div>
+	<script>
+		// $('span').each(function () {
+		// 	var position = $(this).text();
+
+		// 	$(this).tip({
+		// 		position: position
+		// 	})
+		// });
+		$('span').tip()
+	</script>
+</body>
+</html>
